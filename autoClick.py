@@ -22,7 +22,10 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # option = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(executable_path=r"D:\install_dir\code\webTest\chromedriver.exe")
+    #此处为selenium库使用的webdriver的路径
+    path_webdriver = r"D:\install_dir\code\webTest\chromedriver.exe"
+
+    driver = webdriver.Chrome(executable_path=path_webdriver)
 
 
     # 打开首页并且登陆
